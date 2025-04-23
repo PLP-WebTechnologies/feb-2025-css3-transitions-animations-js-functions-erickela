@@ -1,0 +1,69 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 20px;
+  background: #f0f0f0;
+  transition: background 0.5s;
+}
+
+h1 span {
+  color: teal;
+  transition: color 0.3s;
+}
+
+.preferences, .animation-trigger {
+  margin: 20px 0;
+}
+
+button {
+  padding: 10px 15px;
+  cursor: pointer;
+  background: teal;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  transition: background 0.3s, transform 0.3s;
+}
+
+button:hover {
+  background: darkcyan;
+  transform: scale(1.05);
+}
+
+.box {
+  margin-top: 20px;
+  width: 100px;
+  height: 100px;
+  background: coral;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.animate {
+  animation: bounce 1s ease-in-out;
+}
+
+@keyframes bounce {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-50px); }
+  100% { transform: translateY(0); }
+}
+
+/* Themes */
+body.dark {
+  background: #121212;
+  color: #f5f5f5;
+}
+
+body.dark button {
+  background: #333;
+}
+
+body.funky {
+  background: linear-gradient(to right, #ff8a00, #e52e71);
+  color: white;
+}
+
+body.funky button {
+  background: #000000aa;
+}
