@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CSS3 + Advanced JavaScript</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Welcome, <span id="username">Guest</span>! 👋</h1>
+  </header>
+
+  <main>
+    <section class="preferences">
+      <h2>Choose Your Theme 🌈</h2>
+      <input type="text" id="nameInput" placeholder="Enter your name..." />
+      <select id="themeSelect">
+        <option value="light">Light</option>
+        <option value="dark">Dark</option>
+        <option value="funky">Funky</option>
+      </select>
+      <button id="saveBtn">Save Preferences</button>
+    </section>
+
+    <section class="animation-trigger">
+      <h2>Trigger an Animation! 🚀</h2>
+      <button id="animateBtn">Click to Animate</button>
+      <div class="box" id="animatedBox"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Made with 💖 using CSS3 & JS</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
